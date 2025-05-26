@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { VitePWA } from 'vite-plugin-pwa'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  base: '/entry-form-app/', // ✅ ← GitHubリポジトリ名に合わせる
   plugins: [
     react(),
     VitePWA({
@@ -29,4 +30,4 @@ export default defineConfig({
       }
     })
   ]
-})
+});
